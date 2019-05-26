@@ -20,7 +20,7 @@ module.exports = app => {
     res.send(blogs);
   });
 
-  app.post('/api/blogs', requireLogin, async (req, res) => {
+  app.post('/api/blogs', requireLogin, async (req, res, next) => {
     const { title, content } = req.body;
 
     const blog = new Blog({

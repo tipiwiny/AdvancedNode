@@ -13,6 +13,7 @@
     "test": "jest"
   },
   "jest": {
+    "setupTestFrameworkScriptFile": "./test/setup.js",
     "verbose": true,
     "testURL": "http://localhost/"
   },
