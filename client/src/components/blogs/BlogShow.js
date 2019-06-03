@@ -10,6 +10,7 @@ class BlogShow extends Component {
     if (this.props.blog.imageUrl) {
       return (
         <img
+          alt="Smiley face"
           src={
             'https://s3-eu-west-1.amazonaws.com/jl-node-advanced/' +
             this.props.blog.imageUrl
